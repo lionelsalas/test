@@ -55,9 +55,9 @@ int** multiplication(int** matrice1, int** matrice2,int ligne_matrice1,int colon
 	int i,j,k;
 	resultatmultiplication = create_tab(ligne_matrice1,colonne_matrice2);
 	for (i=0; i<ligne_matrice1; i++){
-		for (j=0; j<colonne_matrice2 ;j++){
+		for (j=0; j<=colonne_matrice2 ;j++){
 		resultatmultiplication[i][j] = 0;
-			for (k=0;k<colonne_matrice2;k++){
+			for (k=0;k<=colonne_matrice2;k++){
 				resultatmultiplication[i][j]  += matrice1[i][k]*matrice2[k][j];
 		 }
 		}
